@@ -1,6 +1,5 @@
 FROM alpine
 
-ENV PORT    3000
 
 ADD DriverState /DriverState
 ADD start.sh /start.sh
