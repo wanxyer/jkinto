@@ -17,7 +17,7 @@ spec:
         - name: cylv3ku
           image: chunyanlee/cylv3
           ports:
-            - containerPort: 8251
+            - containerPort: 3000
             
 ---
 apiVersion: v1
@@ -30,6 +30,6 @@ spec:
   type: ClusterIP  
   ports:
   - name: "cylv3kurl"
-    port: 8251
+    port: 3000
   selector:
     name: cylv3
