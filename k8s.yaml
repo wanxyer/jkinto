@@ -15,7 +15,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: cylv3ku
-          image: chunyanlee/cylv2
+          image: chunyanlee/cylv3
           ports:
             - containerPort: 8251
             
