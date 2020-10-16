@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cylv3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: cylv3
+  template:
+    metadata:
+      labels:
+        name: cylv3
+    spec:
+      restartPolicy: Always
+      containers:
+        - name: cylv3ku
+          image: chunyanlee/cylv2
+          ports:
+            - containerPort: 8251
+            
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cylv3kurl
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
+spec:
+  type: ClusterIP  
+  ports:
+  - name: "cylv3kurl"
+    port: 8251
+  selector:
+    name: cylv3
