@@ -1,5 +1,6 @@
 FROM alpine
 
+EXPOSE 8251
 
 ADD DriverState /DriverState
 ADD start.sh /start.sh
