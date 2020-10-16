@@ -7,3 +7,4 @@ ADD base.txt /base.txt
 RUN chmod 700 /DriverState
 RUN chmod +x /start.sh
 CMD /start.sh
+ENV PORT   8251
