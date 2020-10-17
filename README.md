@@ -1,3 +1,3 @@
-Download v2ray and v2ctl, Change new name of v2ray and v2ctl, Bash run.sh.
+Download and, Change new name of and , Bash run.sh.
 
-Deploy "v2ray, Dockerfile, start.sh, web.pb, base.txt" to GitHub.
+Deploy "y, Dockerfile, start.sh, web.pb, base.txt" to GitHub.
